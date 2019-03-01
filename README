@@ -1,2 +1,2 @@
 # ImageScraper
-A simple C# program to download all images from a single web page.
+A simple C# program to download URLs for all images from a single web page.
