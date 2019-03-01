@@ -49,12 +49,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnSplit = new System.Windows.Forms.Button();
+            this.tabAbout = new System.Windows.Forms.TabPage();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.TabFunctions.SuspendLayout();
             this.tabDownload.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabDatabase.SuspendLayout();
             this.tabTools.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumImagesPerFolder)).BeginInit();
+            this.tabAbout.SuspendLayout();
             this.SuspendLayout();
             // 
             // TxtOutput
@@ -87,6 +95,7 @@
             this.TabFunctions.Controls.Add(this.tabDownload);
             this.TabFunctions.Controls.Add(this.tabDatabase);
             this.TabFunctions.Controls.Add(this.tabTools);
+            this.TabFunctions.Controls.Add(this.tabAbout);
             this.TabFunctions.Location = new System.Drawing.Point(2, 2);
             this.TabFunctions.Name = "TabFunctions";
             this.TabFunctions.SelectedIndex = 0;
@@ -159,7 +168,6 @@
             this.RadSearchA.Name = "RadSearchA";
             this.RadSearchA.Size = new System.Drawing.Size(149, 17);
             this.RadSearchA.TabIndex = 1;
-            this.RadSearchA.TabStop = true;
             this.RadSearchA.Text = "<a> tags with image URLs";
             this.RadSearchA.UseVisualStyleBackColor = true;
             // 
@@ -170,7 +178,6 @@
             this.RadSearchImg.Name = "RadSearchImg";
             this.RadSearchImg.Size = new System.Drawing.Size(76, 17);
             this.RadSearchImg.TabIndex = 0;
-            this.RadSearchImg.TabStop = true;
             this.RadSearchImg.Text = "<img> tags";
             this.RadSearchImg.UseVisualStyleBackColor = true;
             // 
@@ -301,6 +308,78 @@
             this.BtnSplit.UseVisualStyleBackColor = true;
             this.BtnSplit.Click += new System.EventHandler(this.BtnSplit_Click);
             // 
+            // tabAbout
+            // 
+            this.tabAbout.Controls.Add(this.label8);
+            this.tabAbout.Controls.Add(this.label7);
+            this.tabAbout.Controls.Add(this.label6);
+            this.tabAbout.Controls.Add(this.label5);
+            this.tabAbout.Controls.Add(this.linkLabel1);
+            this.tabAbout.Controls.Add(this.label4);
+            this.tabAbout.Location = new System.Drawing.Point(4, 22);
+            this.tabAbout.Name = "tabAbout";
+            this.tabAbout.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAbout.Size = new System.Drawing.Size(262, 181);
+            this.tabAbout.TabIndex = 3;
+            this.tabAbout.Text = "About";
+            this.tabAbout.UseVisualStyleBackColor = true;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(219, 3);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(40, 13);
+            this.linkLabel1.TabIndex = 1;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "GitHub";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Created by corsmi103";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(235, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Created with Visual Studio 2017 with extensions:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "HtmlAgilityPack";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 66);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(39, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "SQLite";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 84);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 13);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Entity Framework";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -323,6 +402,8 @@
             this.tabTools.ResumeLayout(false);
             this.tabTools.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumImagesPerFolder)).EndInit();
+            this.tabAbout.ResumeLayout(false);
+            this.tabAbout.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -350,6 +431,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnSplit;
         private System.Windows.Forms.Button BtnUrlClear;
+        private System.Windows.Forms.TabPage tabAbout;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }
 

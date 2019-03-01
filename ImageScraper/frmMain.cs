@@ -175,6 +175,22 @@ namespace ImageScraper
         }
 
         /// <summary>
+        /// Launch GitHub link using system
+        /// </summary>
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("https://github.com/corsmi103/");
+            }
+            catch (Exception ex)
+            {
+                UpdateConsole("Failed to launch web browser with GitHub link. Please manually visit: "
+                              + "https://github.com/corsmi103/");
+            }
+        }
+
+        /// <summary>
         /// Clear output console
         /// </summary>
         private void BtnClearConsole_Click(object sender, EventArgs e)
